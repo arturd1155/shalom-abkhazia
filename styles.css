@@ -380,6 +380,24 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   .about-photo { height: 100%; }
 }
 
+/* Stay (hotel) — photo underlay, content in the left column over the sky */
+.section-bg--stay { object-position: 78% 50%; }
+.section-bg__tint--stay {
+  background: linear-gradient(95deg, rgba(8, 18, 60, 0.78) 0%, rgba(8, 18, 60, 0.32) 48%, rgba(8, 18, 60, 0) 78%);
+}
+#stay .section__eyebrow { color: var(--sun); }
+#stay .section__title { color: #fff; }
+#stay .section__title em { color: var(--sun); }
+#stay .section__lead { color: rgba(255, 255, 255, 0.88); }
+@media (min-width: 900px) {
+  #stay .stay-content > * { max-width: 640px; }
+  #stay .stay-facts { grid-template-columns: repeat(2, 1fr); }
+  .section-bg--stay { object-position: center; }
+}
+@media (max-width: 899px) {
+  .section-bg__tint--stay { background: rgba(8, 18, 60, 0.6); }
+}
+
 /* Stay (hotel) facts */
 .stay-facts { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 .stay-fact {
