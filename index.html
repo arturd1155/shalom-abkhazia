@@ -63,6 +63,18 @@
   <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
     <path d="M12 3.3l2.7 5.6 6.1.6-4.5 4.2 1.3 6.1L12 17l-5.6 2.8 1.3-6.1-4.5-4.2 6.1-.6L12 3.3Z"></path>
   </symbol>
+  <symbol id="icon-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="3" width="14" height="18" rx="2"></rect>
+    <path d="M9 8h6M9 12h6M9 16h4"></path>
+  </symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4.5 12.5l5 5L19.5 7"></path>
+  </symbol>
+  <symbol id="icon-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 3.5 2.5 20h19L12 3.5Z"></path>
+    <path d="M12 10v4.5"></path>
+    <circle cx="12" cy="17.2" r="0.6" fill="currentColor"></circle>
+  </symbol>
 </svg>
 
 <header class="header" id="header">
@@ -72,10 +84,10 @@
       Шалом, Абхазия!
     </a>
     <nav class="nav" id="nav">
-      <a href="#about">О форуме</a>
       <a href="#stay">Проживание</a>
       <a href="#program">Программа</a>
       <a href="#speakers">Спикеры</a>
+      <a href="#terms">Условия</a>
       <a href="#register">Регистрация</a>
       <a href="#contacts">Контакты</a>
     </nav>
@@ -85,10 +97,10 @@
     </button>
   </div>
   <nav class="nav-mobile" id="navMobile">
-    <a href="#about">О форуме</a>
     <a href="#stay">Проживание</a>
     <a href="#program">Программа</a>
     <a href="#speakers">Спикеры</a>
+    <a href="#terms">Условия</a>
     <a href="#register">Регистрация</a>
     <a href="#contacts">Контакты</a>
   </nav>
@@ -147,48 +159,13 @@
 
       <div class="hero__cta">
         <a href="#register" class="btn btn--primary">Подать заявку</a>
-        <a href="#about" class="btn btn--on-hero">Узнать больше <svg class="icon icon--sm" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></a>
+        <a href="#stay" class="btn btn--on-hero">Узнать больше <svg class="icon icon--sm" viewBox="0 0 24 24"><use href="#icon-arrow-right"></use></svg></a>
       </div>
     </div>
 
     <div class="hero__socials">
       <a href="#" class="social-btn" aria-label="VK"><svg class="icon" viewBox="0 0 24 24"><use href="#icon-globe"></use></svg></a>
       <a href="#" class="social-btn" aria-label="Telegram"><svg class="icon" viewBox="0 0 24 24"><use href="#icon-arrow-up-right"></use></svg></a>
-    </div>
-  </section>
-
-  <!-- О ФОРУМЕ -->
-  <section class="section" id="about">
-    <div class="container">
-      <span class="section__eyebrow" data-reveal>О форуме</span>
-      <h2 class="section__title" data-reveal>Молодые люди, <em>которые ищут своих</em> —<br class="br-desktop"> находят их здесь, на берегу моря.</h2>
-
-      <div class="placeholder-note">
-        ✏️ Плейсхолдер — замените текст ниже на реальное описание цели форума и того, для кого он проводится
-      </div>
-
-      <div class="about-grid">
-        <div class="about-main">
-          <p class="about-text" data-reveal>
-            «Шалом, Абхазия!» — это форум, где молодые люди еврейской общины собираются вместе на несколько дней:
-            знакомятся, учатся, обсуждают важные темы и отдыхают у моря. Здесь каждый находит единомышленников,
-            новые знания и вдохновение — вне зависимости от того, приехал он один или с друзьями.
-          </p>
-          <div class="about-cards">
-            <div class="mini-card" data-reveal>
-              <svg class="mini-card__icon icon" viewBox="0 0 24 24"><use href="#icon-target"></use></svg>
-              <div class="mini-card__title">Цель форума</div>
-              <div class="mini-card__text placeholder-text">Текст-заглушка — опишите главную цель форума одним-двумя предложениями</div>
-            </div>
-            <div class="mini-card" data-reveal>
-              <svg class="mini-card__icon icon" viewBox="0 0 24 24"><use href="#icon-users"></use></svg>
-              <div class="mini-card__title">Кто участвует</div>
-              <div class="mini-card__text placeholder-text">Текст-заглушка — укажите возраст и состав аудитории</div>
-            </div>
-          </div>
-        </div>
-        <img class="about-photo" data-reveal src="gallery-photo.jpg" alt="Пальмовая аллея у моря, Абхазия" loading="lazy" width="928" height="1290">
-      </div>
     </div>
   </section>
 
@@ -365,6 +342,36 @@
         <figure class="past-item" data-reveal>
           <img src="past-group-fest.jpg" alt="Команда фестиваля еврейской культуры" loading="lazy" width="1000" height="562">
         </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- УСЛОВИЯ УЧАСТИЯ -->
+  <section class="section" id="terms">
+    <div class="container">
+      <span class="section__eyebrow" data-reveal>Условия участия</span>
+      <h2 class="section__title" data-reveal>Что нужно знать <em>перед подачей заявки</em></h2>
+
+      <div class="terms-grid">
+        <div class="term-card" data-reveal>
+          <svg class="term-card__icon icon" viewBox="0 0 24 24"><use href="#icon-doc"></use></svg>
+          <div class="term-card__title">Кто может участвовать</div>
+          <p class="term-card__text">Документально подтверждённые еврейские корни.</p>
+        </div>
+        <div class="term-card" data-reveal>
+          <svg class="term-card__icon icon" viewBox="0 0 24 24"><use href="#icon-check"></use></svg>
+          <div class="term-card__title">Что включает оплата участия</div>
+          <ul class="term-card__list">
+            <li><svg class="icon icon--sm" viewBox="0 0 24 24"><use href="#icon-check"></use></svg>Проживание</li>
+            <li><svg class="icon icon--sm" viewBox="0 0 24 24"><use href="#icon-check"></use></svg>Питание</li>
+            <li><svg class="icon icon--sm" viewBox="0 0 24 24"><use href="#icon-check"></use></svg>Участие во всех образовательных, экскурсионных и развлекательных мероприятиях</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="terms-note" data-reveal>
+        <svg class="terms-note__icon icon" viewBox="0 0 24 24"><use href="#icon-alert"></use></svg>
+        <p><strong>Обратите внимание:</strong> бронирование места без оплаты участия не производится.</p>
       </div>
     </div>
   </section>

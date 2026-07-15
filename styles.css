@@ -358,27 +358,30 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .placeholder-note--on-dark { background: rgba(255, 90, 54, 0.14); border-color: rgba(255, 90, 54, 0.4); color: #ff9376; }
 .placeholder-text { color: var(--placeholder) !important; font-style: italic; }
 
-/* About */
-.about-grid { display: grid; gap: 32px; grid-template-columns: 1fr; }
-.about-main { display: flex; flex-direction: column; gap: 32px; }
-.about-text { color: var(--ink-soft); font-size: 1.08rem; max-width: 65ch; }
-.about-photo { width: 100%; height: 280px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-card); }
-#about .about-photo { transition: transform var(--t-base), box-shadow var(--t-base); }
-#about .about-photo:hover { transform: scale(1.02); box-shadow: var(--shadow-card-hover); }
-.about-cards { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-.mini-card { border-radius: var(--radius-lg); padding: 28px; background: var(--card-bg); box-shadow: var(--shadow-card); border: 1px solid var(--card-border); }
-#about .mini-card { transition: transform var(--t-base), box-shadow var(--t-base); }
-#about .mini-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-card-hover); }
-.mini-card__icon { width: 26px; height: 26px; display: block; margin-bottom: 14px; color: var(--sea); transition: transform var(--t-base); }
-#about .mini-card:hover .mini-card__icon { transform: scale(1.12); }
-.mini-card__title { font-weight: 700; margin-bottom: 8px; color: var(--ink); }
-.mini-card__text { font-size: 0.92rem; color: var(--ink-soft); }
-.mini-card__label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); margin-bottom: 12px; }
-
-@media (min-width: 900px) {
-  .about-grid { grid-template-columns: 1.2fr 0.8fr; align-items: stretch; }
-  .about-photo { height: 100%; }
+/* Terms — условия участия */
+.terms-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-bottom: 20px; }
+.term-card { border-radius: var(--radius-lg); padding: 28px; background: var(--card-bg); box-shadow: var(--shadow-card); border: 1px solid var(--card-border); }
+#terms .term-card { transition: transform var(--t-base), box-shadow var(--t-base); }
+#terms .term-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-card-hover); }
+.term-card__icon { width: 26px; height: 26px; display: block; margin-bottom: 14px; color: var(--sea); }
+.term-card:nth-child(2) .term-card__icon { color: var(--cypress); }
+.term-card__title { font-weight: 700; margin-bottom: 10px; color: var(--ink); }
+.term-card__text { font-size: 0.95rem; color: var(--ink-soft); }
+.term-card__list { display: flex; flex-direction: column; gap: 10px; }
+.term-card__list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--ink-soft); }
+.term-card__list .icon--sm { color: var(--cypress); flex-shrink: 0; margin-top: 4px; }
+.terms-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border-radius: var(--radius-lg);
+  padding: 22px 26px;
+  background: color-mix(in srgb, var(--sunset) 8%, white);
+  border: 1px solid color-mix(in srgb, var(--sunset) 25%, white);
 }
+.terms-note__icon { color: var(--sunset); flex-shrink: 0; margin-top: 2px; width: 22px; height: 22px; }
+.terms-note p { color: var(--ink); font-size: 0.98rem; }
+.terms-note strong { font-weight: 800; }
 
 /* Stay (hotel) — photo underlay, content in the left column over the sky */
 .section-bg--stay { object-position: 78% 50%; }
