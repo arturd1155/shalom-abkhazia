@@ -318,6 +318,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .hero__socials { position: relative; display: flex; justify-content: center; gap: 12px; padding-top: 40px; }
 .social-btn { width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(6px); transition: transform var(--t-base), background var(--t-fast); }
 .social-btn:hover { background: rgba(255, 255, 255, 0.3); transform: translateY(-3px) scale(1.06); }
+.social-btn--text { font-weight: 800; font-size: 0.85rem; letter-spacing: 0.02em; }
 
 /* ---------- Sections ---------- */
 .section { position: relative; padding: 100px 0; }
@@ -611,5 +612,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .social-links { display: flex; gap: 12px; }
 .social-link { padding: 10px 22px; border-radius: var(--radius-full); font-size: 0.85rem; font-weight: 700; color: #fff; background: rgba(255, 255, 255, 0.1); transition: transform var(--t-base), background var(--t-fast); }
 .social-link:hover { background: rgba(255, 255, 255, 0.16); transform: translateY(-2px); }
-.footer__contact { font-size: 0.88rem; color: rgba(255, 255, 255, 0.6); }
+.footer__contact { font-size: 0.88rem; color: rgba(255, 255, 255, 0.6); line-height: 1.9; }
+.footer__contact a { color: rgba(255, 255, 255, 0.85); font-weight: 600; transition: color var(--t-fast); }
+.footer__contact a:hover { color: #fff; }
 .footer__copy { color: rgba(255, 255, 255, 0.4); font-size: 0.8rem; text-align: center; padding: 20px 0; border-top: 1px solid rgba(255, 255, 255, 0.1); }
